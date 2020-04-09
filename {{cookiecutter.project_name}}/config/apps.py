@@ -18,6 +18,7 @@ THIRD_PARTY_APPS = [
     "easy_thumbnails",
     "filer",
     "mptt",
+    "compressor",
     "djangocms_icon",
     "djangocms_link",
     "djangocms_picture",

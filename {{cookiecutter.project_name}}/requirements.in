@@ -15,6 +15,7 @@ psycopg2_binary
 
 # production
 gunicorn
+django_compressor
 
 # test
 pytest-django
