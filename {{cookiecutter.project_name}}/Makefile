@@ -8,23 +8,23 @@ install: $(DC)
 	docker-compose build
 
 runserver: $(DC)
-	docker-compose run -p {{cookiecutter.port}}:{{cookiecutter.port}} django python ./manage.py runserver 0.0.0.0:{{cookiecutter.port}}
+	docker-compose run --rm -p {{cookiecutter.port}}:{{cookiecutter.port}} django python ./manage.py runserver 0.0.0.0:{{cookiecutter.port}}
 
 migrate: $(DC)
-	docker-compose run django python ./manage.py migrate
+	docker-compose run --rm django python ./manage.py migrate
 
 superuser: $(DC)
-	docker-compose run django python ./manage.py createsuperuser
+	docker-compose run --rm django python ./manage.py createsuperuser
 
 test: $(DC)
-	docker-compose run django py.test
+	docker-compose run --rm django py.test
 
 shell:
-	 docker-compose run django python ./manage.py shell
+	 docker-compose run --rm django python ./manage.py shell
 
 backup:
 	docker-compose exec db pg_dump -U postgres -d postgres -f ./backups/`date +%Y-%m-%d_%H:%M:%S`.sql
 
 app:
 	mkdir apps/$(name)
-	docker-compose run django python manage.py startapp $(name) apps/$(name)
+	docker-compose run --rm django python manage.py startapp $(name) apps/$(name)
