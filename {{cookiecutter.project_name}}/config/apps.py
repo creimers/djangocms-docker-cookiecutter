@@ -15,16 +15,9 @@ THIRD_PARTY_APPS = [
     "menus",
     "sekizai",
     "djangocms_text_ckeditor",
-    "reversion",
     "easy_thumbnails",
     "filer",
     "mptt",
-    "cmsplugin_filer_file",
-    "cmsplugin_filer_folder",
-    "cmsplugin_filer_link",
-    "cmsplugin_filer_image",
-    "cmsplugin_filer_teaser",
-    "cmsplugin_filer_video",
 ]
 
 LOCAL_APPS = []
