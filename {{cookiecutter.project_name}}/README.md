@@ -2,8 +2,8 @@
 
 ## what's inside.
 * python3
-* Django 1.9
-* djangoCMS 3.4
+* Django 2.2
+* djangoCMS 3.7
 * pyjade
 * material design lite | bootstrap 4 | foundation 6
 * Rototo | Roboto Mono | Helvetica
