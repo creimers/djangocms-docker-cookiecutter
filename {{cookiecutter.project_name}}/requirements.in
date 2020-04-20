@@ -8,6 +8,7 @@ django-cms
 djangocms-bootstrap4
 djangocms-admin-style
 djangocms-text-ckeditor
+djangocms-page-meta
 
 # database
 dj-database-url

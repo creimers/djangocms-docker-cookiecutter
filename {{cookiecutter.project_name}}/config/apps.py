@@ -37,6 +37,8 @@ THIRD_PARTY_APPS = [
     "djangocms_bootstrap4.contrib.bootstrap4_picture",
     "djangocms_bootstrap4.contrib.bootstrap4_tabs",
     "djangocms_bootstrap4.contrib.bootstrap4_utilities",
+    "meta",
+    "djangocms_page_meta",
 ]
 
 LOCAL_APPS = []
