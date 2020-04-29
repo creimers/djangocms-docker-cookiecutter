@@ -1,3 +1,5 @@
 src/media
 collected_static/
 backups/
+
+.env
